@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+header{
+    height: auto;
+    background-image: url(images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    background-color: hsl(193, 100%, 96%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 5%;
+    width: 100%;
+}
+.logo{
+    width: 150px;
+    height: 25px;
+}
+button{
+    width: 12rem;
+    padding: 8px 0 8px 0;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+    font-family: 'poppins',sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+}
+nav button{
+    font-weight: 600;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1% 5% 5% 5%;
+}
+.side{
+    margin: 1%;
+}
+.hero img{
+    width: 30rem;
+}
+.gt-strtd{
+    margin-top: 2rem;
+    background-color: hsl(322, 100%, 66%);
+    color: white;
+    width: 14rem;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0.8rem;
+}
+.hero p,.gt-strtd{
+    font-weight: 400;
+}
+.hero h1{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.features{
+    padding: 8% 8% 4% 8%;
+}
+.feat-item{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 5%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 4%;
+    border-radius: 10px;
+}
+.feat-info, .feat-info img{
+    margin: 4%;
+}
+.feat-item p{
+    font-weight: 300;
+    margin-top: 1rem;
+}
+.feat-item img{
+    width: 18rem;
+}
+
+.build-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    width: fit-content;
+    font-size: 20px;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+.build-card button{
+    margin-top: 1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+}
+.wave{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.wave .shape-fill {
+    fill: #ECECEC;
+}
+.footer{
+    background-color: rgb(236, 236, 236);
+    color: hsl(192, 100%, 9%);
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    align-items: center;
+    padding: 0 4% 2% 4%;
+}
+.footer li a{
+    color: hsl(192, 100%, 9%);
+    margin: 2rem;
+}
+.footer ion-icon{
+    font-size: 30px;
+}
+.footer li a:hover,ion-icon:hover,nav button:hover{
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+.logos{
+    width: 190px;
+    height: 32px;
+}
+.one li{
+    display: inline-flex;
+    margin: 1rem;
+}
+.set{
+    margin: 0 auto;
+}
+.address{
+    font-size: 35px;
+}
+.four ion-icon{
+    font-size: 30px;
+    margin: 0.5rem;
+}
+@media (max-width: 767px){
+    header{
+        background-image: url(images/bg-hero-mobile.svg);
+        background-size: cover;
+    }
+    nav{
+        padding-top: 6%;
+    }
+    nav button{
+        width: 6rem;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 20%;
+        text-align: center;
+        padding-bottom: 10%;
+    }
+    .hero h1{
+        font-size: 25px;
+    }
+    .hero img{
+        width: 20rem;
+    }
+    .hero button{
+        margin-bottom: 4%;
+    }
+    .feat-item{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin: 6%;
+    }
+    .feat-item img{
+        width: 12rem;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .build-card{
+        transform: scale(-0.9);
+        rotate: 180deg;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .set{
+        margin: unset;
+    }
+    .four{
+        margin: auto;
+    }
+}
